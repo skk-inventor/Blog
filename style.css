@@ -172,3 +172,73 @@ header #toggle.active:after {
     margin-top : -60px;
     transition-delay : 0.3s;
 }
+
+@media screen and (max-width : 768px) {
+
+    .content h1{
+        font-size : 40px;
+    }
+
+    .nav-item {
+        padding : 20px;
+    }
+
+    .nav-item a {
+        font-size : 1em;
+    }
+
+    .container {
+        position : absolute;
+        top : 100px;
+        left : 50px;
+        width : 400px;
+        display : flex;
+        flex-direction : row;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+    .container .card {
+        position : relative;
+        max-width : 100px;
+        height : 120px;
+        background : #fff;
+        margin : 20px 10px;
+        padding : 30px 10px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        border-radius : 10px;
+    }
+
+    .container .card:hover {
+        height : 150px;
+    }
+
+    .container .card .imgbx {
+        position : relative;
+        width : 100px;
+        height : 30px;
+        top : -40px;
+    }
+
+    .container .card .imgbx img {
+        max-width : 100%;
+        height : 120px;
+        border-radius : 10px;
+    }
+
+    .container .card .img_content {
+        margin-top : -140px;
+        padding : 10px 15px;
+    }
+
+    .container .card:hover .img_content {
+        margin-top : 10px;
+    }
+
+    .container .card .img_content h2,p {
+        font-size : 1em;
+    }
+
+}
